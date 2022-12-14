@@ -1,0 +1,519 @@
+/* 
+/ ===== HEADER ====================== */
+
+.header {
+  box-shadow: 0 2px #c7c7c7;
+}
+
+.header-container {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page {
+  max-width: 1300px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+#logo {
+  width: 119px;
+  height: 30px;
+}
+
+#padlock-icon {
+  width: 17px;
+  height: 20px;
+}
+
+/* // =================================== */
+
+.section-order {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+
+.section-order h1 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #333333;
+}
+
+.section-order-by,
+#orderby {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  width: 142px;
+  height: 42px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* // ===== FILTER ====================== */
+.col-filter h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  color: #333333;
+}
+
+.col-filter {
+  width: 173px;
+  height: 500px;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.color-filter {
+  display: flex;
+  align-items: center;
+}
+
+.color-filter input {
+  width: 16px;
+  height: 16px;
+}
+
+.color-filter label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000000;
+  padding-bottom: 10px;
+  padding: 10px;
+}
+
+.button-text #submit {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-decoration: underline;
+  background: transparent;
+  color: #666666;
+  border: none;
+}
+
+.button-text svg {
+  margin-left: 2px;
+}
+
+.size-filter-title {
+  margin: 24px 0px;
+}
+
+.size-filter-fields {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.size-field-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 8px;
+  margin-right: 5px;
+}
+
+.amount-filter-title {
+  margin: 24px 0px 14px 0px;
+}
+
+/* // ===== FIM FILTER ====================== */
+
+/* // ===== CARDS ====================== */
+
+.section-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+
+.col-cards {
+  width: 976px;
+}
+
+.row-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-card {
+  width: 33%;
+  margin-bottom: 42px;
+}
+
+.card {
+  width: 195.25px;
+  height: 424px;
+}
+
+.card-media {
+  width: 100%;
+  height: 293px;
+}
+
+#card-image {
+  width: 100%;
+  height: 100%;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-product {
+  padding: 10px 0px;
+}
+
+.card-product-title {
+  margin: 10px 0px;
+  font-family: "Open sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+#card-price-amount {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+#card-price-installment {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+}
+
+.card-button {
+  padding-top: 14px;
+}
+
+#card-button-buy {
+  width: 100%;
+  height: 33px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #000000;
+}
+
+.button-responsive-filters {
+  display: none;
+}
+
+.filter-modal-mobile {
+  text-align: left;
+}
+
+.modal-form-option {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #666666;
+  background: transparent;
+  border: none;
+  margin: 30px 0px;
+  width: 100%;
+}
+
+.filter-modal-form-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 173px;
+}
+
+.modal-filter-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.modal-filter-button-apply {
+  width: 160px;
+  height: 35px;
+  background: #00c0ee;
+  border: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.modal-filter-button-cancel {
+  width: 160px;
+  height: 35px;
+  background: transparent;
+  border: 1px solid #666666;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #666666;
+}
+
+/* // ===== FIM CARDS ====================== */
+
+/* // ===== FOOTER ====================== */
+
+.footer {
+  background-color: #000000;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 33px;
+}
+
+.footer-info {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* // ------------MODAL----------- */
+
+.modal {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  background: #ffffff;
+  overflow-y: scroll;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  box-shadow: 0 2px #c7c7c7;
+  padding: 0px 16px;
+}
+
+.modal-header-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  text-transform: uppercase;
+
+  color: #666666;
+}
+
+.modal-header-button {
+  background: transparent;
+  border: none;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px 16px 30px 16px;
+}
+
+.modal-container-button {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.modal-order-button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  color: #000000;
+}
+
+/* // --------------RESPONSIVE------------- */
+
+@media (max-width: 1290px) {
+  .section-cards,
+  .section-order,
+  .header-container {
+    padding: 0px 30px;
+  }
+
+  .col-filter {
+    width: 245px;
+  }
+}
+
+@media (max-width: 820px) {
+  .col-card {
+    width: 50%;
+  }
+
+  .col-cards {
+    width: 70%;
+  }
+
+  .col-filter {
+    width: 30%;
+  }
+
+  .header-container {
+    padding: 0px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .col-cards {
+    width: 100%;
+  }
+
+  .col-filter {
+    display: none;
+  }
+
+  .section-order-title {
+    width: 100%;
+  }
+
+  .section-cards {
+    padding: 0px 16px;
+  }
+
+  .section-order {
+    display: block;
+    text-align: center;
+    padding: 30px 16px;
+  }
+
+  .section-order-by {
+    display: none;
+  }
+
+  .button-responsive-filters {
+    display: flex;
+    height: 49px;
+    border: 1px solid #666666;
+    margin-top: 12px;
+  }
+
+  .col-tab {
+    width: 100%;
+  }
+
+  .divider-tab {
+    width: 1px;
+    height: 100%;
+    background: #666666;
+  }
+
+  .tab {
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    background: transparent;
+    color: #666666;
+    border: none;
+  }
+
+  .col-cards {
+    padding: 0px;
+  }
+
+  .card,
+  .col-card {
+    width: 161.79px;
+  }
+
+  .card-media {
+    height: 242.55px;
+  }
+}
+
+@media (max-width: 325px) {
+  .modal-filter-button-apply,
+  .modal-filter-button-cancel {
+    width: 120px;
+  }
+
+  .card,
+  .col-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-media {
+    height: 320px;
+  }
+}
