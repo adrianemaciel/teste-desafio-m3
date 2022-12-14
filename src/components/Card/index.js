@@ -1,8 +1,15 @@
+import getImages from "../../utils/getImages";
+
 const Card = ({ image, name, price, installment, installmentValue, onBuy }) => {
+  console.log(image);
   return (
     <div className="card">
       <div className="card-media">
-        <img id="card-image" src={image} alt={name} />
+        <img
+          id="card-image"
+          src={getImages(image.replaceAll(".png", ""))}
+          alt={name}
+        />
       </div>
       <div className="card-content">
         <div className="card-product">
