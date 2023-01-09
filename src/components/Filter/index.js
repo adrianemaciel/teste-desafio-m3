@@ -1,14 +1,18 @@
+import { useState, useEffect } from "react";
 import Checkbox from "../Checkbox";
 import SizeField from "../SizeField";
 
 const Filter = () => {
+  const [amarelo, setAmerelo] = useState();
+  console.log("amarelo", amarelo)
+
   return (
     <>
       <h2>Cores</h2>
       <div className="checkbox-wrapper">
         <form action="/">
           <div>
-            <Checkbox name={"Amarelo"} value={"true"} />
+            <Checkbox name={"Amarelo"} value={amarelo} setAmerelo={(e) => setAmerelo(e)} />
             <Checkbox name={"Azul"} value={"true"} />
             <Checkbox name={"Branco"} value={"true"} />
             <Checkbox name={"Cinza"} value={"true"} />
@@ -68,3 +72,5 @@ const Filter = () => {
 };
 
 export default Filter;
+
+

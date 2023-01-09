@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "../Modal";
 import MobileFilter from "../MobileFilter";
 import Filter from "../Filter";
@@ -12,6 +12,17 @@ const Cards = ({ cards }) => {
   console.log("modal", modal);
 
   console.log("cards", cards);
+
+ 
+  // Utilizar useEffect, useState, setState
+
+  // Passo 1
+
+  //  - useEffect e setar o cards em um array que terá o valor incial como null ou [], assim que iniciar a renderização do componente
+  //  - após isso, criar um estado para o filter, nesse estado irá ter, exemplo:
+  //  - filter, setFilter = useState({amarelo: false, azul: false})
+  //  - Quando clicar na checkbox da determinda cor, alterar o valor para true.
+
   return (
     <div className="page">
       <div className="section-order">
@@ -45,6 +56,8 @@ const Cards = ({ cards }) => {
             )}
           </Modal>
         )}
+
+        {/* button filter mobile */}
         <div className="button-responsive-filters">
           <div className="col-tab">
             <button
@@ -81,7 +94,6 @@ const Cards = ({ cards }) => {
 
         <div className="section-order-by">
           <select id="orderby" name="orderby">
-            <option value="">Ordenar por:</option>
             <option value="recentes">Mais recentes</option>
             <option value="nenor">Menor preço</option>
             <option value="maior">Maior preço</option>
